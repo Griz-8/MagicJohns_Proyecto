@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: rgba(255, 205, 204);
+  }
+  
+  /* Header */
+  .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3vh 5vw;
+    background-color: rgba(255, 205, 204);
+    border-bottom: 0.3vh solid rgba(245, 0, 4);
+    font-family: "Roboto Slab", serif;
+    font-weight: 900;
+    gap: 2vw;
+    flex-wrap: wrap;
+  }
+  
+  .logo {
+    height: 8vh;
+  }
+  
+  .logo_mini {
+    height: 4vh;
+  }
+  
+  .nav {
+    display: flex;
+    gap: 3vw;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .nav a {
+    text-decoration: none;
+    color: rgba(245, 0, 4);
+    font-family: "Roboto Slab", serif;
+    font-weight: 900;
+    font-size: 2.3vh;
+  }
+  
+  .nav a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Contenido principal */
+  .contenido-principal {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .sideizq, .sideder {
+    flex: 1 1 20%;
+    background-color: rgba(255, 205, 204);
+    background-image: radial-gradient(rgba(245, 0, 4) 0.1vh, transparent 0.1vh);
+    background-size: 0.7vh 0.7vh;
+    min-height: 5vh;
+  }
+  
+  .contenido {
+    flex: 2 1 60%;
+    background-color: rgba(255, 205, 204);
+    text-align: center;
+    font-size: 5vh;
+    font-weight: bold;
+    color: rgba(245, 0, 4);
+    padding: 4vh 3vw;
+  }
+  
+  /* Footer */
+  .footer {
+    background-color: #ed0000;
+    color: white;
+    padding: 5vh 5vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 4vw;
+    font-family: 'Georgia', serif;
+  }
+  
+  .footer-section {
+    flex: 1 1 30%;
+    min-width: 40%;
+  }
+  
+  .footer-section h3 {
+    font-size: 2.2vh;
+    margin-bottom: 2vh;
+    font-weight: bold;
+  }
+  
+  .footer-section p,
+  .footer-section a,
+  .footer-section li {
+    font-size: 1.8vh;
+    color: white;
+    line-height: 1.6;
+    text-decoration: none;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-section ul li {
+    margin-bottom: 1.5vh;
+  }
+  
+  .footer-section a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-section .nutri {
+    display: inline-block;
+    margin-top: 2vh;
+  }
+  
+  .footer-section input {
+    width: 100%;
+    padding: 1.5vh;
+    margin-bottom: 1.5vh;
+    border: 0.2vh solid white;
+    background-color: transparent;
+    color: white;
+    font-size: 1.8vh;
+  }
+  
+  .footer-section input::placeholder {
+    color: white;
+  }
+  
+  .footer-section button {
+    background-color: transparent;
+    border: 0.3vh solid white;
+    color: white;
+    padding: 1.5vh;
+    font-weight: bold;
+    width: 100%;
+    cursor: pointer;
+  }
+  
+  .footer-section button:hover {
+    background-color: white;
+    color: #ed0000;
+  }
+  
+  /* ---------------------------
+     Responsividad (Media Queries)
+  --------------------------- */
+  
+  @media (max-width: 1024px) {
+    .contenido {
+      font-size: 4.2vh;
+    }
+  
+    .nav {
+      gap: 2vw;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .header {
+      flex-direction: column;
+      padding: 3vh 3vw;
+    }
+  
+    .logo {
+      height: 7vh;
+    }
+  
+    .contenido-principal {
+      flex-direction: column;
+    }
+  
+    .sideizq, .sideder {
+      flex: 1 1 100%;
+    }
+  
+    .contenido {
+      flex: 1 1 100%;
+      font-size: 4vh;
+    }
+  
+    .nav {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2vw;
+    }
+  
+    .nav a {
+      font-size: 2vh;
+    }
+  
+    .footer {
+      padding: 3vh 4vw;
+      gap: 3vw;
+    }
+  
+    .footer-section {
+      flex: 1 1 100%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .logo {
+      height: 6vh;
+    }
+  
+    .contenido {
+      font-size: 3.5vh;
+    }
+  
+    .nav a {
+      font-size: 1.8vh;
+    }
+  
+    .footer {
+      flex-direction: column;
+      gap: 2vh;
+    }
+  
+    .footer-section {
+      flex: 1 1 100%;
+    }
+  }
+  
