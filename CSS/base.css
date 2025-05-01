@@ -58,7 +58,9 @@
   }
   
   .sideizq, .sideder {
-    flex: 1 1 20%;
+    flex-grow: 2;
+    flex-shrink: 1;
+    flex-basis: 20%;
     background-color: rgba(255, 205, 204);
     background-image: radial-gradient(rgba(245, 0, 4) 0.1vh, transparent 0.1vh);
     background-size: 0.7vh 0.7vh;
@@ -66,7 +68,9 @@
   }
   
   .contenido {
-    flex: 2 1 60%;
+    flex-grow: 2;
+    flex-shrink: 1;
+    flex-basis: 60%;
     background-color: rgba(255, 205, 204);
     text-align: center;
     font-size: 5vh;

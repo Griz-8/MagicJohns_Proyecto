@@ -1,5 +1,6 @@
 .newsletter_nw-container {
-    display: flex;
+    display:flex;
+    flex-wrap: wrap;
     max-width: 900px;
     margin: 20px auto;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
